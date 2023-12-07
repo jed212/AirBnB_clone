@@ -27,6 +27,15 @@ class HBNBCommand(cmd.Cmd):
     Defines the HolbertonBnB command interpreter
     """
     prompt = "(hbnb) "
+    __classes = {
+            "BaseModel",
+            "User",
+            "State",
+            "City",
+            "Place",
+            "Amenity",
+            "Review"
+            }
 
     def do_quit(self, arg):
         """Quit command to exit the program."""
