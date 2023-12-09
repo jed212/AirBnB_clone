@@ -18,7 +18,7 @@ class BaseModel:
         self.id = str(uuid4())
         self.created_at = datetime.today()
         self.updated_at = datetime.today()
-        
+
         if len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "created_at" or k == "updated_at":
@@ -52,5 +52,5 @@ class BaseModel:
         Return the print/str representation of the BaseModel instance.
         """
         className = self.__class__.__name__
-        
+
         return "[{}] ({}) {}".format(className, self.id, self.__dict__)
