@@ -7,10 +7,10 @@ header {
     display: flex;
     align-items: center;
 }
-header div {
+header .logo {
     margin-left: 20px;
     width: 140px;
     height: 60px;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
+    padding-left: 20px;
+    background: url(../images/logo.png) no-repeat center;
 }
